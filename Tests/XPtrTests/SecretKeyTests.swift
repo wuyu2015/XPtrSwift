@@ -1,4 +1,5 @@
 import XCTest
+import XCTestDelayPrinter
 @testable import XPtr
 
 final class SecretKeyTests: XCTestCase {
