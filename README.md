@@ -12,6 +12,12 @@ XPtrSwift 是一个简单、轻量、迅速的加密/解密算法，具备 O(1) 
 2. 输入此 URL：https://github.com/wuyu2015/XPtrSwift.git
 3. 按照提示完成集成过程。
 
+### 使用 Swift Package Manager (SPM) 安装
+
+```
+.package(url: "https://github.com/wuyu2015/XPtrSwift.git", from: "1.0.0")
+```
+
 ## 许可证
 
 MIT License
@@ -26,11 +32,17 @@ XPtrSwift is a simple, lightweight, and fast encryption/decryption algorithm wit
 
 ## Installation
 
-You can integrate MaterialColorSwift into your Xcode project using Swift Package Manager:
+You can integrate XPtrSwift into your Xcode project using Swift Package Manager:
 
 1. In Xcode, select "File" -> "Swift Packages" -> "Add Package Dependency..."
 2. Enter the URL of this repository: https://github.com/wuyu2015/DirtyJSONSwift.git
 3. Follow the prompts to complete the integration process.
+
+### Install using Swift Package Manager (SPM)
+
+```
+.package(url: "https://github.com/wuyu2015/XPtrSwift.git", from: "1.0.0")
+```
 
 ## License
 
