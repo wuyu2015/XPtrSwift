@@ -3,7 +3,7 @@ extension XPtr {
         static let count8 = 2016
         static let count64 = 7680
         
-        // 2080 = 1 + 2 + 3 + ... + 64
+        // 2016 = 1 + 2 + 3 + ... + 63
         let X8: [UInt8]
         let H8: [UInt8]
         
