@@ -1,5 +1,4 @@
 import XCTest
-import XCTestDelayPrinter
 @testable import XPtr
 
 final class SecretKeyTests: XCTestCase {
@@ -7,66 +6,66 @@ final class SecretKeyTests: XCTestCase {
     // MARK: Print
     
     func testPrintRandomX8() {
-        pr(XPtr.SecretKey.randomX8())
+        print(XPtr.SecretKey.randomX8())
     }
     
     func testPrintRandomX64() {
-        pr(XPtr.SecretKey.randomX64())
+        print(XPtr.SecretKey.randomX64())
     }
     
     func testPrintRandomX1K() {
-        pr(XPtr.SecretKey.randomX1K())
+        print(XPtr.SecretKey.randomX1K())
     }
     
     func testPrintFormattedX8() {
-        pr(XPtr.SecretKey.random().formatX8(comment: true))
+        print(XPtr.SecretKey.random().formatX8(comment: true))
     }
     
     func testPrintFormattedH8() {
-        pr(XPtr.SecretKey.random().formatH8(comment: true))
+        print(XPtr.SecretKey.random().formatH8(comment: true))
     }
     
     func testPrintFormattedX64() {
-        pr(XPtr.SecretKey.random().formatX64(comment: true))
+        print(XPtr.SecretKey.random().formatX64(comment: true))
     }
     
     func testPrintFormattedH64() {
-        pr(XPtr.SecretKey.random().formatH64(comment: true))
+        print(XPtr.SecretKey.random().formatH64(comment: true))
     }
     
     func testPrintFormattedX1K() {
-        pr(XPtr.SecretKey.random().formatX1K())
+        print(XPtr.SecretKey.random().formatX1K())
     }
     
     func testPrintFormattedH1K() {
-        pr(XPtr.SecretKey.random().formatH1K())
+        print(XPtr.SecretKey.random().formatH1K())
     }
     
     func testPrintDump() {
-        pr(XPtr.SecretKey.random().dump())
+        print(XPtr.SecretKey.random().dump())
     }
     
     func testPrintSumTo() {
         for count in 1...64 {
-            pr(XPtr.SecretKey.sumTo(count))
+            print(XPtr.SecretKey.sumTo(count))
         }
     }
     
     func testPrintOffset8() {
         for count in 1...65 {
-            pr("count=\(count),ofset8=\(XPtr.SecretKey.offset8(count: count))")
+            print("count=\(count),ofset8=\(XPtr.SecretKey.offset8(count: count))")
         }
     }
     
     func testPrintOffset64() {
         for count in 1...1025 {
-            pr("count=\(count),ofset64=\(XPtr.SecretKey.offset64(count: count))")
+            print("count=\(count),ofset64=\(XPtr.SecretKey.offset64(count: count))")
         }
     }
     
     func testPrintAlignment64() {
         for count in 1...2049 {
-            pr("count=\(count),alignment64=\(XPtr.SecretKey.alignment64(count: count))")
+            print("count=\(count),alignment64=\(XPtr.SecretKey.alignment64(count: count))")
         }
     }
     
