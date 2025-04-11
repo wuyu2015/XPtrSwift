@@ -15,6 +15,15 @@ extension XPtr {
         let X1K: [UInt16]
         let H1K: [UInt8]
         
+        public init(X8: [UInt8], H8: [UInt8], X64: [UInt16], H64: [UInt8], X1K: [UInt16], H1K: [UInt8]) {
+            self.X8 = X8
+            self.H8 = H8
+            self.X64 = X64
+            self.H64 = H64
+            self.X1K = X1K
+            self.H1K = H1K
+        }
+        
         // MARK: Random
         public static func random() -> Self {
             return Self.init(X8: randomX8(), H8: randomH8(), X64: randomX64(), H64: randomH64(), X1K: randomX1K(), H1K: randomH1K())
