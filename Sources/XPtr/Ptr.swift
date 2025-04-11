@@ -16,8 +16,8 @@ extension XPtr {
         public var startIndex: Int { 0 }
         public var endIndex: Int { count }
         
-        public init(_ pointer: UnsafeMutablePointer<UInt8>, count: Int, key: SecretKey) {
-            p = pointer
+        public init(bytes: UnsafeMutablePointer<UInt8>, count: Int, key: SecretKey) {
+            p = bytes
             self.count = count
             countType = CountType(count: count)
             k = key
