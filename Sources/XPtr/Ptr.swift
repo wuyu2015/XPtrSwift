@@ -1,5 +1,5 @@
 extension XPtr {
-    public struct Ptr: MutableCollection, RandomAccessCollection {
+    public struct Ptr: MutableCollection, RandomAccessCollection, RangeReplaceableCollection {
         
         public let p: UnsafeMutablePointer<UInt8>
         public let count: Int
@@ -15,6 +15,10 @@ extension XPtr {
         // Collection 协议要求实现的
         public var startIndex: Int { 0 }
         public var endIndex: Int { count }
+        
+        public init() {
+            fatalError()
+        }
         
         public init(bytes: UnsafeMutablePointer<UInt8>, count: Int, key: SecretKey) {
             p = bytes
